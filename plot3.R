@@ -1,13 +1,14 @@
-#exploratory data analysis project1 (Plot 3).
+## Plot 3
 
 #load the data 
 df <- read.table("household_power_consumption.txt", header = T,
                  sep = ";", na.strings = "?")
 
+#Data Cleaning
 #change the date variable into date class
 df$Date <- as.Date(df$Date, format = "%d/%m/%Y")
 
-# subsetting the data
+# sub-setting the data
 sub_df<- subset(df, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"))
 
 #convert date and time
