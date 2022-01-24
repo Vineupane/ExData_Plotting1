@@ -1,9 +1,10 @@
-#exploratory data analysis project1 (Plot 4).
+## Plot 4
 
 #load the data 
 df <- read.table("household_power_consumption.txt", header = T,
                  sep = ";", na.strings = "?")
 
+#Data Cleaning
 #change the date variable into date class
 df$Date <- as.Date(df$Date, format = "%d/%m/%Y")
 
